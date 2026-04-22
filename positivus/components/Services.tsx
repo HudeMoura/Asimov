@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./Services.module.css";
 
-type Variant = "light" | "green" | "dark";
+type Variant = "light" | "green" | "dark" | "darklight";
 
 interface Service {
   title: string[];
@@ -12,7 +12,7 @@ interface Service {
 const services: Service[] = [
   { title: ["Search engine", "optimization"], variant: "light", image: "/services/seo.png" },
   { title: ["Pay-per-click", "advertising"], variant: "green", image: "/services/ppc.png" },
-  { title: ["Social Media", "Marketing"], variant: "dark", image: "/services/social.png" },
+  { title: ["Social Media", "Marketing"], variant: "darklight", image: "/services/social.png" },
   { title: ["Email", "Marketing"], variant: "light", image: "/services/email.png" },
   { title: ["Content", "Creation"], variant: "green", image: "/services/content.png" },
   { title: ["Analytics and", "Tracking"], variant: "dark", image: "/services/analytics.png" },
@@ -26,7 +26,7 @@ export default function Services() {
           <h2 className={styles.heading}>Services</h2>
           <p className={styles.sub}>
             At our digital marketing agency, we offer a range of services to help
-            businesses grow and succeed online.
+            businesses grow and succeed online. These services include:
           </p>
         </header>
 

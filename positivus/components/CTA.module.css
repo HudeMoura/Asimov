@@ -1,8 +1,10 @@
-.section { padding: 70px 0; }
+.section { height: 394px; margin-bottom: 140px;}
 .box {
   background: var(--color-light);
   border-radius: var(--radius-card);
-  padding: 60px;
+  margin: 100px 23.5px;
+  width: 1240px;
+  height: 347px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10,19 +12,23 @@
   position: relative;
   overflow: hidden;
 }
-.copy { max-width: 500px; }
-.title { font-size: 30px; color: var(--color-dark); margin-bottom: 26px; }
-.text { margin-bottom: 26px; }
+.copy { max-width: 500px; height: 227px; margin: 60px; }
+.title { font-size: 38px; color: var(--color-dark); margin-bottom: 26px; }
+.text { font-size: 16px; margin-bottom: 26px; }
 .cta {
   background: var(--color-dark);
   color: var(--color-white);
   border-radius: 14px;
+  width: 288px;
+  height: 68px;
   padding: 20px 35px;
   font-size: 20px;
 }
-.illustration { flex-shrink: 0; }
+.illustration { 
+  flex-shrink: 0; 
+}
 
-@media (max-width: 900px) {
+@media (max-width: 1440px) {
   .box { flex-direction: column; padding: 40px 30px; text-align: center; }
   .copy { margin: 0 auto; }
 }

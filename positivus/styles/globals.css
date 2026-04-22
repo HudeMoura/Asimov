@@ -5,12 +5,14 @@
   --color-white: #FFFFFF;
   --shadow-card: 0 5px 0 0 var(--color-dark);
   --radius-card: 45px;
-  --container-max: 1240px;
+  --container-max: 1440px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 html, body {
+  width: 1440px;
+  margin: 0 auto;
   background: var(--color-white);
   color: var(--color-dark);
   font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;

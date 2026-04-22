@@ -1,4 +1,4 @@
-.hero { padding: 60px 0 70px; }
+.hero { padding: 70px 0 70px; }
 .inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -22,9 +22,14 @@
   transition: background .2s;
 }
 .cta:hover { background: #2b2c3a; }
-.illustration { display: flex; justify-content: center; }
+.illustration { 
+  display: flex; 
+  justify-content: center;
+  width: 600px;
+  height: 515px;
+}
 
-@media (max-width: 900px) {
+@media (max-width: 1440px) {
   .inner { grid-template-columns: 1fr; gap: 40px; }
   .title { font-size: 42px; }
 }
