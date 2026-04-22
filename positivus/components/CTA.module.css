@@ -1,0 +1,28 @@
+.section { padding: 70px 0; }
+.box {
+  background: var(--color-light);
+  border-radius: var(--radius-card);
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.copy { max-width: 500px; }
+.title { font-size: 30px; color: var(--color-dark); margin-bottom: 26px; }
+.text { margin-bottom: 26px; }
+.cta {
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-radius: 14px;
+  padding: 20px 35px;
+  font-size: 20px;
+}
+.illustration { flex-shrink: 0; }
+
+@media (max-width: 900px) {
+  .box { flex-direction: column; padding: 40px 30px; text-align: center; }
+  .copy { margin: 0 auto; }
+}

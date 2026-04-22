@@ -1,0 +1,33 @@
+:root {
+  --color-green: #B9FF66;
+  --color-dark: #191A23;
+  --color-light: #F3F3F3;
+  --color-white: #FFFFFF;
+  --shadow-card: 0 5px 0 0 var(--color-dark);
+  --radius-card: 45px;
+  --container-max: 1240px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+img { max-width: 100%; display: block; }
+
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.tagGreen { background: var(--color-green); padding: 0 7px; border-radius: 7px; }
+.tagWhite { background: var(--color-white); padding: 0 7px; border-radius: 7px; }
