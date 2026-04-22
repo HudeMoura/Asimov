@@ -19,9 +19,8 @@ export default function Hero() {
           </button>
         </div>
         <div className={styles.illustration}>
-          {/* Substitua por sua imagem em /public/hero.png */}
           <Image
-            src="/hero.png"
+            src="/cases/header.png"
             alt="Hero illustration"
             width={600}
             height={515}

@@ -14,7 +14,8 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <Link href="/" className={styles.logo}>
-          <span className={styles.logoMark} aria-hidden />
+          <img src="/cases/icon.png" alt="Positivus logo" />
+          <span/>
           Positivus
         </Link>
         <nav className={styles.nav}>
