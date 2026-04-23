@@ -17,7 +17,7 @@ export default function CTA() {
             </button>
           </div>
           <div className={styles.illustration}>
-            <Image src="/cases/cta.png" alt="" width={494} height={394} />
+            <Image src="/cases/cta.png" alt="" width={354} height={394} />
           </div>
         </div>
       </div>

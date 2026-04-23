@@ -10,7 +10,7 @@
   justify-content: space-between;
   gap: 40px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 .copy { max-width: 500px; height: 227px; margin: 60px; }
 .title { font-size: 38px; color: var(--color-dark); margin-bottom: 26px; }
@@ -24,11 +24,24 @@
   padding: 20px 35px;
   font-size: 20px;
 }
-.illustration { 
-  flex-shrink: 0; 
+.illustration {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  margin-right: 100px;
+}
+.illustration {
+  z-index: 2;
 }
 
-@media (max-width: 1440px) {
-  .box { flex-direction: column; padding: 40px 30px; text-align: center; }
-  .copy { margin: 0 auto; }
+@media (max-width: 768px) {
+  .box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .illustration {
+    position: static;
+    margin-top: 20px;
+  }
 }
