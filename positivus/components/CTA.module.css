@@ -2,7 +2,6 @@
 .box {
   background: var(--color-light);
   border-radius: var(--radius-card);
-  margin: 100px 23.5px;
   width: 1240px;
   height: 347px;
   display: flex;

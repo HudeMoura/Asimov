@@ -10,14 +10,11 @@ Landing page no estilo do template **Positivus**, construída com:
 ## Como rodar
 
 ```bash
-# 1. Instale as dependências
-npm install
-# (ou) pnpm install / yarn / bun install
 
-# 2. Rode o servidor de desenvolvimento
+npm install
+
 npm run dev
 
-# 3. Abra http://localhost:3000
 ```
 
 Para build de produção:
@@ -71,5 +68,3 @@ Todas as variáveis estão em `styles/globals.css`:
   --color-light: #F3F3F3;
 }
 ```
-
-Edite ali e a mudança propaga para todos os componentes.
