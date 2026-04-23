@@ -1,5 +1,4 @@
 # Python — Asimov Academy
-### Seção hero de landing page para curso de Python com IA
 
 ---
 

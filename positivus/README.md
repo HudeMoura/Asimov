@@ -1,36 +1,60 @@
 # Positivus — Next.js + CSS Modules
 
-Landing page no estilo do template **Positivus**, construída com:
+---
 
-- ⚡️ **Next.js 14** (App Router) + TypeScript
-- 🎨 **CSS Modules** (sem Tailwind)
-- 🔠 **Space Grotesk** via `next/font/google`
-- 🟢 Paleta: `#B9FF66` · `#191A23` · `#F3F3F3`
+## Visão Geral
 
-## Como rodar
+Reimplementação fiel do design **Positivus** — uma landing page para agências de marketing digital — utilizando tecnologias modernas do ecossistema React/Next.js, sem dependências de frameworks CSS como Tailwind.
+
+**Stack:**
+- ⚡️ **Next.js 14** com App Router e TypeScript
+- 🎨 **CSS Modules** para estilos encapsulados por componente
+- 🔠 **Space Grotesk** carregada via `next/font/google`
+- 🟢 **Paleta de cores:** `#B9FF66` · `#191A23` · `#F3F3F3`
+
+---
+
+## Pré-requisitos
+
+- [Node.js](https://nodejs.org/) v18 ou superior
+- npm, yarn ou pnpm
+
+---
+
+## Instalação e uso
+
+### Desenvolvimento
 
 ```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/positivus-nextjs.git
+cd positivus-nextjs
 
+# Instale as dependências
 npm install
 
+# Inicie o servidor de desenvolvimento
 npm run dev
-
 ```
 
-Para build de produção:
+Acesse [http://localhost:3000](http://localhost:3000) no navegador.
+
+### Produção
 
 ```bash
 npm run build
 npm run start
 ```
 
-## Estrutura
+---
+
+## Estrutura do projeto
 
 ```
 .
 ├── app/
-│   ├── layout.tsx        # layout raiz (Header + Footer + fonte global)
-│   └── page.tsx          # homepage (Hero, Logos, Services, CTA, CaseStudies)
+│   ├── layout.tsx        # Layout raiz (Header + Footer + fonte global)
+│   └── page.tsx          # Homepage (Hero, Logos, Services, CTA, CaseStudies)
 ├── components/
 │   ├── Header.tsx + .module.css
 │   ├── Footer.tsx + .module.css
@@ -40,26 +64,40 @@ npm run start
 │   ├── CTA.tsx + .module.css
 │   └── CaseStudies.tsx + .module.css
 ├── styles/
-│   └── globals.css       # variáveis CSS (cores, sombra, raio) + reset
+│   └── globals.css       # Variáveis CSS (cores, sombra, raio) + reset
 └── public/
-    ├── hero.png          # ilustração do Hero (adicione)
-    ├── cta.png           # ilustração da CTA (adicione)
-    ├── logos/            # logos das marcas (adicione)
-    └── services/         # ícones de cada serviço (adicione)
+    ├── hero.png          # Ilustração do Hero (adicione)
+    ├── cta.png           # Ilustração da CTA (adicione)
+    ├── logos/            # Logos das marcas (adicione)
+    └── services/         # Ícones de cada serviço (adicione)
 ```
 
-## Adicionando suas imagens
+---
 
-1. **Hero**: salve em `public/hero.png` (≈ 600×515px).
-2. **CTA**: salve em `public/cta.png` (≈ 359×294px).
-3. **Logos**: salve em `public/logos/` com os nomes referenciados em `components/Logos.tsx` (`amazon.svg`, `dribbble.svg`, etc.) ou ajuste o array.
-4. **Services**: salve em `public/services/` (`seo.png`, `ppc.png`, `social.png`, `email.png`, `content.png`, `analytics.png`).
+## Adicionando imagens
 
-PNGs com fundo transparente ficam melhores nos cards verde/escuro.
+As imagens não estão inclusas no repositório. Adicione-as manualmente nos caminhos abaixo:
 
-## Customizando o design
+| Imagem | Caminho | Dimensão sugerida |
+|--------|---------|-------------------|
+| Ilustração Hero | `public/hero.png` | ~600 × 515 px |
+| Ilustração CTA | `public/cta.png` | ~359 × 294 px |
+| Logos de marcas | `public/logos/*.svg` | — |
+| Ícones de serviços | `public/services/*.png` | — |
 
-Todas as variáveis estão em `styles/globals.css`:
+**Logos esperados** (ajuste o array em `components/Logos.tsx` se necessário):
+`amazon.svg`, `dribbble.svg`, e demais marcas referenciadas no componente.
+
+**Ícones de serviços esperados:**
+`seo.png`, `ppc.png`, `social.png`, `email.png`, `content.png`, `analytics.png`
+
+> 💡 PNGs com fundo transparente ficam melhores nos cards de fundo verde e escuro.
+
+---
+
+## Customização
+
+Todas as variáveis de design estão centralizadas em `styles/globals.css`:
 
 ```css
 :root {
@@ -68,3 +106,22 @@ Todas as variáveis estão em `styles/globals.css`:
   --color-light: #F3F3F3;
 }
 ```
+
+Para ajustar cores, sombras ou raios de borda globalmente, edite apenas esse arquivo.
+
+---
+
+## Scripts disponíveis
+
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Gera o build de produção |
+| `npm run start` | Serve o build de produção |
+| `npm run lint` | Executa o ESLint |
+
+---
+
+## Licença
+
+Distribuído sob a licença MIT. Veja `LICENSE` para mais informações.
