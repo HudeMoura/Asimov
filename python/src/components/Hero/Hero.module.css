@@ -130,13 +130,14 @@
   transform: translateX(14px);
 }
 
-/* ─── Layout ─────────────────────────────────────────────────────────── */
+/* Layout  */
 .hero {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   overflow: hidden;
+  padding: 0 60px;
 }
 
 .notebookLines {
@@ -166,7 +167,7 @@
   transition: background var(--transition);
 }
 
-/* ─── Left Column ────────────────────────────────────────────────────── */
+/*  Left Column  */
 .leftCol {
   padding: 64px 56px 64px 96px;
   display: flex;
@@ -648,14 +649,14 @@
   border-color: transparent transparent var(--curl-color) transparent;
 }
 
-/* ─── Floating tags ──────────────────────────────────────────────────── */
+/* Floating tags  */
 .floatTag {
   position: absolute;
   background: var(--nb-bg);
   border: 1px solid var(--line-color);
   border-radius: 6px;
   padding: 6px 12px;
-  font-size: 11.5px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--ink-mid);
   display: flex;
@@ -693,7 +694,6 @@
   50%       { transform: translateY(-5px); }
 }
 
-/* ─── Responsive ─────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;

@@ -166,7 +166,7 @@ export function Hero() {
               <span className={styles.cStr}>"vendas.csv"</span>){'\n'}
               {'\n'}
               resposta = client.messages.<span className={styles.cFn}>create</span>({'\n'}
-              {'  '}model=<span className={styles.cStr}>"claude-3-5-sonnet"</span>,{'\n'}
+              {'  '}model=<span className={styles.cStr}>"asimov-3-5-sonnet"</span>,{'\n'}
               {'  '}messages=[&#123;<span className={styles.cStr}>"role"</span>:{' '}
               <span className={styles.cStr}>"user"</span>,{'\n'}
               {'    '}<span className={styles.cStr}>"content"</span>: f
